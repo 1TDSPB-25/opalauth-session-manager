@@ -18,3 +18,12 @@ do usuário utilizando persistência no navegador (LocalStorage/SessionStorage).
 2. Abra um **Draft Pull Request** apontando para o mestre.
 3. Mova seu card no **Project** para a coluna "In Progress".
 4. Siga as instruções de cada Issue enviada pelo Professor.
+
+### 🤖 Monitoria Técnica (Aríete)
+
+https://opal.google/app/1piCs_zGlleVSLW7bVpXF5exMNfrXfhJK
+
+O Aríete está configurado para ser seu par na engenharia. Se a apostila (Págs. 1-70) não for suficiente:
+1. Peça ao Opal para consultar a **MDN Web Docs** ou **W3Schools**.
+2. Ele filtrará a documentação para o nosso contexto de JavaScript Vanilla.
+3. **Regra de Ouro:** O Opal não entregará o código pronto, ele explicará o conceito para você implementar.
