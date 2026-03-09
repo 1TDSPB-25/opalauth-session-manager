@@ -13,7 +13,7 @@ function validaCampo(){
 const campoSenha = document.getElementById("input-senha");
 let valorCampo = parseInt(campoSenha.value);
    
-//verificando se a senha é PAR
+
 console.log(valorCampo % 2 == 0);
 
 }
