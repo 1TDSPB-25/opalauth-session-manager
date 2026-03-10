@@ -20,3 +20,8 @@ function validaCampo() {
   const valorHash = valorCampo ** 2;
   console.log("Senha modificada: ", valorHash);
 }
+
+// ISSUE 1
+let nomeUsuario = "OpalAuth";
+let tentativasLogin = 5;
+console.log("Bem vindo, usuário ${nomeUsuario}! Você tem ${tentativasLogin} tentativas de login restantes.");
