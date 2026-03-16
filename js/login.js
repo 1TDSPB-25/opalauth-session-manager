@@ -190,6 +190,15 @@ function validaCampo() {
 //     console.log("Tipo do retorno:", typeof usuarioEncontrado);
 //     const statusSessao = document.querySelector('#status-sessao');
 
+    if (usuarioEncontrado) {
+        alert("Acesso Autorizado");
+        window.location.href = "dashboard.html";
+    } else {
+        statusSessao.textContent = "Usuário ou Senha inválidos";
+        statusSessao.style.color = "red";
+    }
+});
+
 //     if (usuarioEncontrado) {
 //         alert("Acesso Autorizado");
 //         window.location.href = "dashboard.html";
@@ -209,78 +218,68 @@ function validaCampo() {
 //     console.log("Senha modificada:", valorHash);
 // }
 
-// #ISSUE - 2
-// #ISSUE - 3
 
-// Criação da Base (Pág. 21, 32):
-// Criar um Array de Objetos chamado listaUsuarios contendo exatamente 3 usuários:
-const listaUsuarios = [
-    {
-        usuario: "admin",
-        senhaOriginal: 2026,
-        perfil: "Comandante"
-    },
-    {
-        usuario: "gestor",
-        senhaOriginal: 1010,
-        perfil: "Supervisor"
-    },
-    {
-        usuario: "aluno",
-        senhaOriginal: 5050,
-        perfil: "Operador"
+// #ISSUE - 5
+
+
+if (usuarioEncontrado) {
+    const dadosUsuarioParaSalvar = { ...usuarioEncontrado };
+
+    localStorage.setItem("usuarioLogado", JSON.stringify(dadosUsuarioParaSalvar));
+
+    alert("Acesso Autorizado");
+    window.location.href = "dashboard.html";
+
+    const usuarioSalvo = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+    if (usuarioSalvo) {
+        const {usuario} = usuarioSalvo;
+
+        const tituloDashboard = document.querySelector("h1");
+        tituloDashboard.textContent = `Bem-vindo, Piloto ${usuario}!`;
+    }else {
+        window.location.href = "index.html";
     }
-];
-
-//  Página de Destino:
-//  Criar o arquivo dashboard.html com o código fornecido pelo professor.
-//  Teste de Tipo (Pág. 22):
-// No console, use console.log(typeof listaUsuarios) e console.table(listaUsuarios) para validar a estrutura.
-console.log(typeof listaUsuarios);
-console.table(listaUsuarios);
 
 
-// ISSUE - 4:
-const btnLogin = document.querySelector("#btn-entrar");
-btnLogin.addEventListener("click", (event) => {
-    event.preventDefault();
-    const usuarioDigitado = document.querySelector('#input-usuario').value;
-    const senhaDigitada = parseInt(document.querySelector('#input-senha').value);
-    const usuarioEncontrado = listaUsuarios.find(u =>
-        u.usuario === usuarioDigitado && u.senhaOriginal === senhaDigitada);
+    function validaCampo() {
+        const campoSenha = document.getElementById("input-senha");
+        let valorCampo = parseInt(campoSenha.value);
 
-    console.log("Tipo do retorno:", typeof usuarioEncontrado);
-    const statusSessao = document.querySelector('#status-sessao');
+        //Verificando se a senha é PAR:
 
-    if (usuarioEncontrado) {
-        alert("Acesso Autorizado");
-        window.location.href = "dashboard.html";
-    } else {
-        statusSessao.textContent = "Usuário ou Senha inválidos";
-        statusSessao.style.color = "red";
+        //Simulação de HASH:
+        const valorHash = valorCampo ** 2;
+        console.log("Senha modificada:", valorHash);
     }
-});
 
-// Garantir que o sistema "lembre" quem é o piloto logado, permitindo que o nome dele apareça corretamente no Dashboard.
-// 🛠️ Atividades
-//Gravação de Dados:
-//  Após o login ser aprovado na Issue #04, utilize o Spread Operador (...) para criar um objeto de "Sessão Ativa" contendo os dados do usuário.
+    // #ISSUE - 2
+    // #ISSUE - 3
 
-//     Armazenamento: Salve esse objeto no LocalStorage ou SessionStorage utilizando JSON.stringify().
+    // Criação da Base (Pág. 21, 32):
+    // Criar um Array de Objetos chamado listaUsuarios contendo exatamente 3 usuários:
+    const listaUsuarios = [
+        {
+            usuario: "admin",
+            senhaOriginal: 2026,
+            perfil: "Comandante"
+        },
+        {
+            usuario: "gestor",
+            senhaOriginal: 1010,
+            perfil: "Supervisor"
+        },
+        {
+            usuario: "aluno",
+            senhaOriginal: 5050,
+            perfil: "Operador"
+        }
+    ];
 
-// Recuperação no Dashboard: No arquivo do Dashboard, recupere o nome do piloto e utilize a 
-// Desestruturação (Destructuring) (Pág. 66) para extrair o nome e o perfil.
-// Exibição (DOM): Insira o nome do piloto no elemento <h1> do Dashboard para personalizar a recepção.
-        // Gravação de Dados com Spread Operator
-        const sessaoAtiva = { ...usuarioEncontrado, dataLogin: new Date().toLocaleString() };
-
-        // Armazenamento no SessionStorage
-        sessionStorage.setItem("usuario-logado", JSON.stringify(sessaoAtiva));
-
- 
-
-
-
-
-
- 
+    //  Página de Destino:
+    //  Criar o arquivo dashboard.html com o código fornecido pelo professor.
+    //  Teste de Tipo (Pág. 22):
+    // No console, use console.log(typeof listaUsuarios) e console.table(listaUsuarios) para validar a estrutura.
+    console.log(typeof listaUsuarios);
+    console.table(listaUsuarios);
+}
