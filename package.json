@@ -2,21 +2,21 @@
   "name": "opalauth-session-manager",
   "version": "1.0.0",
   "description": "App de controle de sessão",
-  "homepage": "https://github.com/1TDSPB-25/opalauth-session-manager#readme",
+  "homepage": "https://github.com/luizkichimoto/opalauth-session-manager#readme",
   "bugs": {
-    "url": "https://github.com/1TDSPB-25/opalauth-session-manager/issues"
+    "url": "https://github.com/luizkichimoto/opalauth-session-manager/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1TDSPB-25/opalauth-session-manager.git"
+    "url": "git+https://github.com/luizkichimoto/opalauth-session-manager.git"
   },
   "license": "ISC",
-  "author": "alecarlosjesus",
+  "author": "luizkichimoto",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "npm": "^11.11.1"
