@@ -2,3 +2,4 @@
 
 # iginorando a pasta node_modules
 node_modules/ 
+package-lock.jason
