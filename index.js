@@ -1,5 +1,5 @@
 //Importando projeto HTPP para navegação do pacote node 
-import http from 'node.https';
+import http from 'node:http';
 // Criae um setvidor HTTP
 const server = http.createServer();
 
