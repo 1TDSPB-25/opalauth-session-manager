@@ -2,6 +2,7 @@
   "name": "opalauth-session-manager",
   "version": "1.0.0",
   "description": "App de controle de sessão",
+ feature/inicializando-app-node
   "homepage": "https://github.com/GuilherOliverFeitosa/opalauth-session-manager#readme",
   "bugs": {
     "url": "https://github.com/GuilherOliverFeitosa/opalauth-session-manager/issues"
@@ -12,6 +13,18 @@
   },
   "license": "ISC",
   "author": "guilhermefeitosa",
+=======
+  "homepage": "https://github.com/Gstuani/opalauth-session-manager#readme",
+  "bugs": {
+    "url": "https://github.com/Gstuani/opalauth-session-manager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gstuani/opalauth-session-manager.git"
+  },
+  "license": "ISC",
+  "author": "bielstuani",
+ develop
   "type": "module",
   "main": "index.js",
   "scripts": {
