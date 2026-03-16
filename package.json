@@ -1,0 +1,23 @@
+{
+  "name": "opalauth-session-manager",
+  "version": "1.0.0",
+  "description": "App de controle de sessão",
+  "homepage": "https://github.com/gcorrea4/opalauth-session-manager#readme",
+  "bugs": {
+    "url": "https://github.com/gcorrea4/opalauth-session-manager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcorrea4/opalauth-session-manager.git"
+  },
+  "license": "ISC",
+  "author": "gabrielcorrea",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "npm": "^11.11.1"
+  }
+}
