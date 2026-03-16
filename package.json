@@ -2,16 +2,16 @@
   "name": "opalauth-session-manager",
   "version": "1.0.0",
   "description": "App de controle de sessão",
-  "homepage": "https://github.com/Gstuani/opalauth-session-manager#readme",
+  "homepage": "https://github.com/Andre-Matuda/opalauth-session-manager#readme",
   "bugs": {
-    "url": "https://github.com/Gstuani/opalauth-session-manager/issues"
+    "url": "https://github.com/Andre-Matuda/opalauth-session-manager/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gstuani/opalauth-session-manager.git"
+    "url": "git+https://github.com/Andre-Matuda/opalauth-session-manager.git"
   },
   "license": "ISC",
-  "author": "bielstuani",
+  "author": "Andre-Matuda",
   "type": "module",
   "main": "index.js",
   "scripts": {
