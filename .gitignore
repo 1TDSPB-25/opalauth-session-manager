@@ -1,6 +1,9 @@
-feature/inicializando-app-node
-
+feature/inicializando-app-nodefeature/inicializando-app-node
 
 # iginorando a pasta node_modules
 node_modules/ 
 package-lock.jason
+
+# Ignorando a pasta node_modules
+node_modules/
+develop
