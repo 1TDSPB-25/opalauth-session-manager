@@ -15,9 +15,16 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "npm run test"
+    
   },
   "dependencies": {
-    "npm": "^11.11.1"
+    "npm": "^11.11.1",
+  
+    "npm-start": "1.4.2"
+  
   }
+
+  
 }
