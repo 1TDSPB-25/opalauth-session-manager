@@ -1,4 +1,8 @@
+feature/inicializando-app-node
 
 
 # iginorando a pasta node_modules
 node_modules/ 
+=======
+node_modules/
+ develop
