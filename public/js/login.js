@@ -197,7 +197,7 @@ function validaCampo() {
         statusSessao.textContent = "Usuário ou Senha inválidos";
         statusSessao.style.color = "red";
     }
-});
+
 
 //     if (usuarioEncontrado) {
 //         alert("Acesso Autorizado");

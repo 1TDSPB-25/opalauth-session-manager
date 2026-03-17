@@ -1,0 +1,43 @@
+/* Tema Dark/Rosa FIAP */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #ED145B; /* Rosa FIAP */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ED145B;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background: #222;
+    border: 1px solid #ED145B;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ED145B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c0124a;
+}
