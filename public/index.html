@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OpalAuth - FIAP</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/login.js" defer></script>
+</head>
+<!--
+    Justificativa (O "Porquê")
+    "Turma, esta 'estrutura' é a nossa fundação.
+    O HTML define as caixas onde os dados entrarão,
+    e o CSS garante a sinalização visual.
+    O JavaScript que vocês escreverão agora será o 'cérebro' que lê esses inputs e decide se o acesso é permitido ou não, baseado nos Tipos de Dados que o computador entende."
+ -->
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="titulo-boas-vendas">OpalAuth System</h1>
+            <p id="status-sessao">Aguardando identificação...</p>
+        </header>
+
+        <main class="login-box">
+            <input type="text" id="input-usuario" placeholder="Nome do Piloto">
+            <input type="number" id="input-senha" placeholder="Código de Acesso">
+            <button id="btn-entrar">Iniciar Sincronização</button>
+        </main>
+    </div>
+
+</body>
+
+</html>

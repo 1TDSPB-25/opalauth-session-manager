@@ -1,0 +1,23 @@
+{
+  "name": "opalauth-session-manager",
+  "version": "1.0.0",
+  "description": "App de controle de sessão",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeAnitelli/opalauth-session-manager.git"
+  },
+  "author": "GuilhermeAnitelli",
+  "license": "ISC",
+  "homepage": "https://github.com/GuilhermeAnitelli/opalauth-session-manager#readme",
+  "dependencies": {
+    "nodemon": "^3.1.14",
+    "npm": "^11.11.1"
+  },
+  "type": "module"
+}
